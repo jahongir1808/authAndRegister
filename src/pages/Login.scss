@@ -1,0 +1,73 @@
+h1 {
+  color: #000;
+  text-align: center;
+  font-size: 34px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  text-align: center;
+}
+.loginP {
+  margin-top: 80px;
+}
+.login {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  &-left,
+  .forms {
+    width: 50%;
+  }
+  .forms {
+    .form {
+      display: flex;
+      width: 90%;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  .txtField {
+    position: relative;
+    span {
+      color: red;
+    }
+    p {
+      position: absolute;
+      top: 5px;
+      cursor: pointer;
+      right: 0px;
+    }
+    input {
+      padding: 14px 24px;
+      width: 100%;
+      color: #000;
+      font-size: 18px;
+      font-family: Inter, sans-serif;
+      line-height: 32px;
+      border: 1px solid #dbdee7;
+      border-radius: 10px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  button {
+    width: 262px;
+    padding: 13px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    background: var(--yellow, #ffc000);
+    color: var(--black, #0d0d0d);
+    text-align: center;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    line-height: 34px;
+    transition: 0.3s;
+    &:hover {
+      background-color: rgb(255, 192, 0, 0.7);
+    }
+  }
+}
