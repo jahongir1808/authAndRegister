@@ -18,6 +18,18 @@
       right: 15px;
     }
   }
+  @media (max-width: 1200px) {
+    .register {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+      &-left, .form {
+        width: 80%;
+      }
+    }
+  }
   .register {
     margin-top: 50px;
     display: flex;

@@ -10,6 +10,19 @@ h1 {
 }
 .loginP {
   margin-top: 80px;
+  @media (max-width: 1200px) {
+    .login {
+      display: flex;
+      flex-direction: column;
+      &-left,
+      .forms {
+        width: 80%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 .login {
   display: flex;
